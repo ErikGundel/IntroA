@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>IntroA</title>
+		<style type="text/css">
+			header {
+				background-color: green;
+				height: 100px;
+				position: fixed;
+				top:0;
+				left:200px;
+				right:0;
+			}
+			#sideNav {
+				background-color: red;
+				width: 200px;
+				position: fixed;
+				top:0;
+				left:0;
+				bottom:0;
+			}
+			#main{
+				background-color: blue;
+				position: fixed;
+				top:100px;
+				bottom:0;
+				right:0;
+				left:200px;
+			}
+			iframe {
+				margin-top: 100px;
+				margin-left: 100px;
+				height: 75%;
+				width: 75%;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+
+		</header>
+		<section id="sideNav">
+
+		</section>
+		<section id="main">
+			<iframe src=""></iframe>
+		</section>
+	</body>
+
+	<script type="text/javascript">
+
+		var addStudent = document.createElement('div');
+			addStudent.style.backgroundColor = "gray";
+			addStudent.style.height = "50px";
+			addStudent.style.width="150px";
+			addStudent.style.left="25px";
+			document.getElementById("sideNav").appendChild(addStudent);
+
+		
+
+		var createDiv = function(color) {
+		var newDiv = document.createElement('div');  //creates new div
+				newDiv.id = 'student'; //gives new divs a ID
+				newDiv.style.backgroundColor = color //applies a background color to the new divs
+				newDiv.style.height = "50px";
+				newDiv.style.width = "200px";
+				newDiv.style.position = "float";
+				newDiv.style.float="left";
+			document.getElementById("sideNav").appendChild(newDiv);
+		}
+
+		createDiv("yellow");
+		createDiv("black");
+
+
+	</script>
+</html>
