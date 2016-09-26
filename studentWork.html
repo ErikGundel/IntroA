@@ -4,21 +4,103 @@
 	<head>
 		<title>IntroA</title>
 		<style type="text/css">
+			body {
+				background-color: black;
+			}
+		/*Creates the header section and establishes the project tabs look*/
 			header {
 				background-color: green;
-				height: 100px;
+				min-height: 100px;
 				position: fixed;
 				top:0;
 				left:200px;
 				right:0;
 			}
+
+			ul.tab {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    border: 1px solid #ccc;
+			    background-color: #f1f1f1;
+
+			}
+
+			/* Float the list items side by side */
+			ul.tab li {
+				float: left;
+			}
+
+			/* Style the links inside the list items */
+			ul.tab li a {
+			    display: inline-block;
+			    color: black;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			    transition: 0.3s;
+			    font-size: 17px;
+			}
+
+			/* Change background color of links on hover */
+			ul.tab li a:hover {
+				background-color: #ddd;
+			}
+
+			/* Create an active/current tablink class */
+			ul.tab li a:focus, .active {
+				background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+			    display: none;
+			    padding: 6px 12px;
+			    border: 1px solid #ccc;
+			    border-top: none;
+			}
+
+
+/*Creates the side navigation and establishes the look of the student tabs*/
 			#sideNav {
 				background-color: red;
-				width: 200px;
+				min-width: 200px;
+				text-align: center;
 				position: fixed;
-				top:0;
+				top:100px;
 				left:0;
 				bottom:0;
+			}
+			tr {
+				margin-top:10px;
+			}
+			td {
+				height:30px;
+				background-color: yellow;
+				border-radius: 10%;
+				box-shadow: 2px 2px 1px #888888;
+
+			}
+			td:hover {
+				box-shadow: 2px 2px 1px #888888;
+				background-color: orange;
+			}
+			td:active {
+				box-shadow: 0px 0px 0px #888888;
+				background-color: orange;
+				transform: translateY(2px);
+				transform: translateX(2px);
+			}
+
+			td:focus { /*Used to maintain the click's effect color change...*/
+				background-color: orange;
+
+			}
+			table {
+				margin: auto;
+				min-width: 150px;
+
 			}
 			#main{
 				background-color: blue;
@@ -28,52 +110,113 @@
 				right:0;
 				left:200px;
 			}
-			iframe {
-				margin-top: 100px;
-				margin-left: 100px;
-				height: 75%;
-				width: 75%;
+			#iframeContainer { /*Used to help scale the iframe*/
+				position: relative;
+				height: 90%;
+				width: 90%;
 
+			}
+			iframe {
+				margin: 10px;
+				min-width: 100%;
+				min-height: 100%;
+				background-color: white;
+				display: none;
 			}
 		</style>
 	</head>
 	<body>
 		<header>
 
+
+
+
+
+			<ul class="tab">
+		  		<li><a href="#"  onClick="openTab(0)">Project 1</a></li>
+		  		<li><a href="#"  onClick="openTab(1)">Project 2</a></li>
+		  		<li><a href="#"  onClick="openTab(2)">Project 3</a></li>
+			</ul>
+
+
+
+
+
 		</header>
 		<section id="sideNav">
-
+			<table>
+				<tbody>
+					<tr><td tabindex = "0" id="s0" onClick = "clickStudent(0)">Mr. Gundel :)</td></tr>
+					<tr><td tabindex = "1" id="s1" onClick = "clickStudent(1)">Lucas A.</td></tr>
+					<tr><td tabindex = "2" id="s2" onClick = "clickStudent(2)">Guillaume B.</td></tr>
+					<tr><td tabindex = "3" id="s3" onClick = "clickStudent(3)">Camille B.</td></tr>
+					<tr><td tabindex = "4" id="s4" onClick = "clickStudent(4)">Russell C.</td></tr>
+					<tr><td tabindex = "5" id="s5" onClick = "clickStudent(5)">Nick D.</td></tr>
+					<tr><td tabindex = "6" id="s6" onClick = "clickStudent(6)">Akira D.</td></tr>
+					<tr><td tabindex = "7" id="s7" onClick = "clickStudent(7)">Matthew G.</td></tr>
+					<tr><td tabindex = "8" id="s8" onClick = "clickStudent(8)">Ryan G.</td></tr>
+					<tr><td tabindex = "9" id="s9" onClick = "clickStudent(9)">Alex H.</td></tr>
+					<tr><td tabindex = "10" id="s10" onClick = "clickStudent(10)">Toby H.</td></tr>
+					<tr><td tabindex = "11" id="s11" onClick = "clickStudent(11)">Kevin J.</td></tr>
+					<tr><td tabindex = "12" id="s12" onClick = "clickStudent(12)">Jimmy P.</td></tr>
+					<tr><td tabindex = "13" id="s13" onClick = "clickStudent(13)">Jackson P.</td></tr>
+					<tr><td tabindex = "14" id="s14" onClick = "clickStudent(14)">Matt P.</td></tr>
+					<tr><td tabindex = "15" id="s15" onClick = "clickStudent(15)">Kate P.</td></tr>
+					<tr><td tabindex = "16" id="s16" onClick = "clickStudent(16)">Emil P.</td></tr>
+					<tr><td tabindex = "17" id="s17" onClick = "clickStudent(17)">Spencer P.</td></tr>
+					<tr><td tabindex = "18" id="s18" onClick = "clickStudent(18)">Zara R.</td></tr>
+					<tr><td tabindex = "19" id="s19" onClick = "clickStudent(19)">Elliot T.</td></tr>
+				</tbody>
+			</table>
 		</section>
 		<section id="main">
-			<iframe src="ErikGundel.github.io/IntroA/index.html"></iframe>
+			<div id="iframeContainer">
+				<iframe id="window" src="" allowtransparency="false" ></iframe>
+			</div>
 		</section>
 	</body>
 
 	<script type="text/javascript">
 
-		var addStudent = document.createElement('div');
-			addStudent.style.backgroundColor = "gray";
-			addStudent.style.height = "50px";
-			addStudent.style.width="150px";
-			addStudent.style.left="25px";
-			document.getElementById("sideNav").appendChild(addStudent);
+			//Array to hold the github usernames of the students
+			var usernameArr = ["ErikGundel", "lucasalcantara16","Gbosdon","cboylan2018","rchan1102","NDagnino","akiradunham","matthewgazelle","RyanGrierson","awh26","TobyH7","KevinJinno","jimmyperry","j8peters","mpilc18","katepiotrowski","emilperdue","spencerplavoukos","zriddy16","skateguy"]
+			
+			var projectArr = []
 
-		
+			var project = -1;
+			var student = -1;
+			//function to show the student's work
 
-		var createDiv = function(color) {
-		var newDiv = document.createElement('div');  //creates new div
-				newDiv.id = 'student'; //gives new divs a ID
-				newDiv.style.backgroundColor = color //applies a background color to the new divs
-				newDiv.style.height = "50px";
-				newDiv.style.width = "200px";
-				newDiv.style.position = "float";
-				newDiv.style.float="left";
-			document.getElementById("sideNav").appendChild(newDiv);
-		}
+			var openTab = function (pjt) {
+				//if no projects are listed, don't show anything...
+				
+				// change this once projects are listed...have students 
+				//create an about me page for their index.html on the main page.
+				if (projectArr.length === 0) {
+					document.getElementById("window").style.display = "none";
+				}
+				else {
+					document.getElementById("window").style.display = "initial";
+				document.getElementById("window").src = "http://" + usernameArr[student] + ".github.io/IntroA/" + projectArr[pjt] + "/index.html";
+				project = pjt;
+				}
+			}
 
-		createDiv("yellow");
-		createDiv("black");
 
+			var clickStudent = function (sdt) {
+				document.getElementById("window").style.display = "initial";
+				document.getElementById("window").src = "http://" + usernameArr[sdt] + ".github.io/IntroA/index.html";
+				student = sdt;
+
+			}
+
+
+			
+
+
+
+
+			
 
 	</script>
 </html>
