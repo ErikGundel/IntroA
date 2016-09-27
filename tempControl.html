@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Temp Controls</title>
+		<style type="text/css">
+			html {
+				cursor: default;
+				/*To prevent the user from selecting anything accidently*/
+				-webkit-user-select: none;  /* Chrome all / Safari all */
+				-moz-user-select: none;     /* Firefox all */
+				-ms-user-select: none;      /* IE 10+ */
+				user-select: none;          /* Likely future */   
+			}
+			body {
+				background-color: #ccbfa5;
+			}
+			#thermostat {
+				height: 200px;
+				width: 400px;
+				border: 2px solid black;
+				border-radius: 10%;
+				margin: auto;
+				background-color: #665F52;
+				margin-top: 50px;
+			}
+			#display {
+				height: 135px;
+				width: 275px;
+				margin-top: 30px;
+				margin-left: 30px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #D6CBB7;
+			}
+			#currentTemp {
+				height: 100px;
+				width: 167px;
+				border: 2px solid black;
+				border-radius: 10%;
+				margin: 10px;
+				float: left;
+				background-color: #EDF6FF;
+			}
+			#currentTemp > span {
+				font-size: 40pt;
+				float: right;
+				margin-right: 35px;
+				margin-top: 20px;
+			}
+			#heatCold {
+				clear: both;
+				margin-left: 60px;
+			}
+			#progTemp {
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				background-color: #EDF6FF;
+				float: left;
+				padding-right: 5px;
+			}
+			#overrideTemp {
+				
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				background-color: #EDF6FF;
+				float: left;
+				padding-right: 5px;
+			}
+
+			#progTemp > span, #overrideTemp > span {
+				font-size: 20pt;
+				float: right;
+
+			}
+			.title {
+				margin: 2px;
+			}
+			#incTempBtn {
+				margin-top: 40px;
+				margin-left: 10px;
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #FF4C4C;
+				box-shadow: 2px 2px 1px #992D2D;
+			}
+			#decTempBtn {
+				margin-top: 30px;
+				margin-left: 10px;
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #4C4CFF;
+				box-shadow: 2px 2px 1px #26267F;
+			}
+			#incTempBtn:hover{
+				background-color: #E54444;
+			}
+			#decTempBtn:hover{
+				background-color: #3C3CCC;
+
+			}
+			#incTempBtn:active,#decTempBtn:active {
+				box-shadow: 0px 0px 0px black;
+				transform: translateY(2px);
+				transform: translateX(2px);
+			}
+			#decTempBtn span, #incTempBtn span {
+				margin: 20px;
+				font-size: 20pt;
+			}
+			#orerrideTemp > span {margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id = "thermostat">
+			<div id="display">
+				<div id = "currentTemp">
+					<span>00&deg</span>
+					<p id="heatCold">Heating</p>
+				</div>
+				<div class="title">Prog:</div>
+				<div id="progTemp">
+					<span>00&deg</span>
+				</div>
+				<div class="title">Override:</div>
+				<div id="overrideTemp">
+					<span>00&deg</span>
+				</div>
+			</div>
+
+			<div id = "incTempBtn">
+				<span>&#x2191;</span>
+			</div>
+			<div id = "decTempBtn">
+				<span>&#x2193;</span>
+			</div>
+		</div>
+		<h1>Temperature Project</h1>
+		<p>
+			You are tasked with the following:
+			</br>
+			<ul>
+				<li>Create a function that will run when the page fully loads that askes the user what temperature it currently is and what temperature the thermostat should be programmed to.  The function must check whether the user enters a valid number (between 45&deg and 95&deg).  The function should also store the values entered in the current temerapture space and programmed temperature space.</li>
+				<li>Create two functions, called incTemp and decTemp.  These functions will be used to manually override the programmed temperature when the red-up arrow is clicked and when the blue-down arrow is clicked.  These should store the new temperature in the override temperature space and should also check whether the thermostat should be heating or cooling to reach the desired temperature. They should then change the text inside the display to say 'Heating' or 'Cooling' </li>
+				<li>Explain what other features we could add to our thermostat that might make it more useful.  Explain what functions might be needed to accomplish these and how you might go about programming this.  Note: You do not have to actually program it, but you should still be using programming words like "if/else statements", "function parameters", and other words we have been learning. </li>
+
+			</ul>
+		</p>
+	</body>
+</html>
+
