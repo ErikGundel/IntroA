@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Generating Game!!</title>
+  </head>
+  <body>
+    <p id="user"></p>
+    <p id="comp"></p>
+    <p id="results"></p>
+    <p id="counter"></p>
+    
+    <script>
+    var counter = 0
+        var userGuess = prompt("Pick a number between 1 and 5!");
+        document.getElementById("user").innerHTML = userGuess;
+      function userGuess_ () {
+        
+        // while (count === 0) {
+        //   var userGuess = prompt("Pick a number between 1 and 5!");
+        //   if (userGuess = NaN) {
+        //     alert("That is not a number!");
+        //     count = 0;
+        //   } else if (userGuess < )
+        // }
+      
+      }
+      
+
+      function AutoRefresh( t ) {
+       setTimeout("location.reload(true);", t);
+      }
+      
+      var counter = 5;
+      var interval = setInterval(function() {
+         document.getElementById("counter").innerHTML = "The page will refresh in " + counter;
+        counter--;
+        // Display 'counter' wherever you want to display it.
+               if (counter == 0) {
+        // Display a login box
+        clearInterval(interval);
+        }
+      }, 1000);
+      
+      function computerAnswer() {
+        var compGuess = Math.floor(Math.random() * 5 + 1);
+        document.getElementById("comp").innerHTML = compGuess;
+        if (userGuess == compGuess) {
+          document.getElementById("results").innerHTML = "You win!!";
+        } else {
+          document.getElementById("results").innerHTML = "Nope! Wrong guess."
+        }
+        AutoRefresh(5000);
+      }
+      
+
+      
+      computerAnswer();
+
+    </script>
+  </body>
+  
+</html>
