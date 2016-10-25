@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Art Project!</title>
+	</head>
+	<body>
+		<canvas id="myCanvas"></canvas>
+
+		<script type="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+				canvas.width = 400;
+				canvas.height = 400;
+				canvas.style.position = "absolute";
+				canvas.style.left = "100px";
+				canvas.style.border = "1px solid black"
+				//canvas.style.border = "1px solid black";
+
+
+			var ctx = canvas.getContext("2d");
+			
+			ctx.beginPath();
+			ctx.fillStyle = "white";
+			ctx.fillRect(0,0,100,140);
+
+			ctx.beginPath();
+			ctx.fillStyle ="black";
+			ctx.fillRect(100,0,10,400);
+
+			ctx.beginPath();
+			ctx.fillStyle ="red";
+			ctx.fillRect(110,0, 290,290);
+			
+			ctx.beginPath();
+			ctx.fillStyle = "black"
+			ctx.fillRect(0,140,100,10);
+
+			ctx.beginPath();
+			ctx.fillStyle = "white";
+			ctx.fillRect(0,150, 100,140);
+
+			ctx.beginPath();
+			ctx.fillStyle="black";
+			ctx.fillRect(0,290,400,10);
+
+			ctx.beginPath();
+			ctx.fillStyle="blue";
+			ctx.fillRect(0, 300, 100,100);
+
+			ctx.beginPath();
+			ctx.fillStyle= "white";
+			ctx.fillRect(110,300, 260, 100);
+
+			ctx.beginPath();
+			ctx.fillStyle="black"
+			ctx.fillRect(370, 300, 10, 100);
+
+			ctx.beginPath();
+			ctx.fillStyle="white";
+			ctx.fillRect(380, 300, 20, 45);
+
+			ctx.beginPath();
+			ctx.fillStyle="black";
+			ctx.fillRect(380, 345, 20,10);
+
+			ctx.beginPath();
+			ctx.fillStyle="yellow";
+			ctx.fillRect(380, 355, 20, 45);
+
+
+
+
+		</script>
+	</body>
+</html>

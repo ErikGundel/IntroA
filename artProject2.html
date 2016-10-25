@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Art Project!</title>
+	</head>
+	<body>
+		<canvas id="myCanvas"></canvas>
+
+		<script type="text/javascript">
+		var x = parseInt(prompt("What width?"));
+		var y = parseInt(prompt("What height?"));
+			var canvas = document.getElementById("myCanvas");
+				canvas.width = x;
+				canvas.height = y;
+				canvas.style.position = "absolute";
+				canvas.style.left = "100px";
+				canvas.style.border = "1px solid black"
+				//canvas.style.border = "1px solid black";
+
+
+			var ctx = canvas.getContext("2d");
+			
+			ctx.beginPath();
+			ctx.fillStyle = "white";
+			ctx.fillRect(0 / 400 * x,0 / 400 * y,100 / 400 * x,140 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle ="black";
+			ctx.fillRect(100 / 400 * x,0 / 400 * y,10 / 400 * x,400 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle ="red";
+			ctx.fillRect(110 / 400 * x,0 / 400 * y, 290 / 400 * x,290 / 400 * y);
+			
+			ctx.beginPath();
+			ctx.fillStyle = "black"
+			ctx.fillRect(0 / 400 * x,140 / 400 * y,100 / 400 * x,10 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle = "white";
+			ctx.fillRect(0 / 400 * x,150 / 400 * y, 100 / 400 * x,140 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="black";
+			ctx.fillRect(0 / 400 * x,290 / 400 * y,400 / 400 * x,10 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="blue";
+			ctx.fillRect(0 / 400 * x, 300 / 400 * y, 100 / 400 * x,100 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle= "white";
+			ctx.fillRect(110 / 400 * x,300 / 400 * y, 260 / 400 * x, 100 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="black"
+			ctx.fillRect(370 / 400 * x, 300 / 400 * y, 10 / 400 * x, 100 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="white";
+			ctx.fillRect(380 / 400 * x, 300 / 400 * y, 20 / 400 * x, 45 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="black";
+			ctx.fillRect(380 / 400 * x, 345 / 400 * y, 20 / 400 * x,10 / 400 * y);
+
+			ctx.beginPath();
+			ctx.fillStyle="yellow";
+			ctx.fillRect(380 / 400 * x, 355 / 400 * y, 20 / 400 * x, 45 / 400 * y);
+
+
+
+
+		</script>
+	</body>
+</html>
