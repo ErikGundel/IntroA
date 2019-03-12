@@ -1,0 +1,156 @@
+{
+  "pokemon" : [
+		{		  
+			"name" : "Bulbasaur",
+		  "pokedex_entry": 1,
+		  "type": "Grass/Poison",
+		  "hp": 45,
+		  "moves": [
+		    "Tackle",
+		    "Growl",
+		    "Vine Whip",
+		    "Leech Seed"
+		    ]
+		},
+		{
+		  "name" : "Ivysaur",
+		  "pokedex_entry": 2,
+		  "type": "Grass/Poison",
+		  "hp": 60,
+		  "moves": [
+		    "Tackle",
+		    "Leech Seed",
+		    "Vine Whip",
+		    "Sleep Powder"
+		    ]
+		},
+		{
+		  "name": "Venusaur",
+		  "pokedex_entry": 3,
+		  "type": "Grass  Poison",
+		  "hp": 80,
+		  "moves" : [
+		    "Poison Powder",
+		    "Solar Beam",
+		    "Razor Leaf",
+		    "Leech Seed"
+		    ]
+		},
+    {
+      "name" : "Charmander",
+      "pokedex_entry" : 4,
+      "type" : "Fire",
+      "hp" : 39,
+      "moves" : [
+        "Scratch",
+        "Growl",
+        "Ember",
+        "Smokescreen"
+        ]
+    },
+    {
+			"name": "Charmeleon",
+			"pokedex_entry" : 5,
+			"type": "Fire",
+			"hp": 58,
+			"moves": [
+				"Rage",
+				"Counter",
+				"Dragon Rage",
+				"Flame Burst"
+			]
+		},
+    {
+      "name" : "Charizard",
+      "pokedex_entry" : 6,
+      "type" : "Fire/Flying",
+      "hp" : 78,
+      "moves" : [
+      	"Flamethrower",
+      	"Wing Attack",
+      	"Flare Blitz",
+      	"Dragon Rage"]
+    },
+    {
+		  "name" : "Squirtle",
+		  "pokedex_entry" : 7,
+		  "type" : "Water",
+		  "hp" : "44",
+		  "moves" : [
+		    "Tackle",
+		    "Tail Whip",
+		    "Bubble",
+		    "Withdraw"
+		  	]
+	  },
+		{
+			"name":"Wartortle",
+			"pokedex_entry":8,
+			"type":"Water",
+			"hp":59,
+			"moves":[
+  			"Withdraw",
+  			"Hydro Pump",
+  			"Aqua Tail",
+  			"Skull Bash"
+  			]
+		},
+		{
+      "name" : "Blastoise",
+      "pokedex_entry" : 9,
+      "type" : "Water",
+      "hp" : 79,
+      "moves" : [
+      	"Aqua Jet",
+      	"Bubble",
+      	"Fake Out",
+      	"Flash Cannon"
+      	] 
+    },
+    {
+			"name" : "Pikachu",
+			"pokedex_entry" :  25,
+			"type" : "electric",
+			"hp" : 35,
+			"moves" : [
+				"Growl",
+				"Thunder Shock", 
+				"Tail Whip",
+				"Quick Attack"
+				]
+		},
+		{
+		  "name" : "Meowth",
+		  "pokedex_entry" : 52,
+		  "type" : "dark",
+		  "hp" : "40",
+		  "moves" : [
+		    "Scratch",
+		    "Growl",
+		    "Bite",
+		    "Fakeout"
+		      ]
+		},
+		{
+    	"name": "Ditto",
+    	"pokedex_entry": 132,
+    	"type": "Normal",
+    	"hp": 48,
+    	"moves": [
+        "Transform"
+      ]
+		},
+    {
+		  "name" : "Mew",
+		  "pokedex_entry" : 151,
+		  "type" : "Psychic",
+		  "hp" : 100,
+		  "moves" : [
+		    "Pound",
+		    "Confusion",
+		    "Mimic",
+		    "Metronome"
+		    ]
+		}
+  ]
+}
